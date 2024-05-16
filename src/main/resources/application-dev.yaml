@@ -1,0 +1,23 @@
+# application-dev.properties
+server:
+    port: 8000
+
+# rabbitmq:
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+rabbitmq:
+  queue:
+    name: test_queue
+    person:
+      name: test_person
+  exchange:
+    name: test_exchange
+  routing:
+    key: test_routing_key
+    person:
+      key: test_person_routing_key
